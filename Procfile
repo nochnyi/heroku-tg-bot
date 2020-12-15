@@ -1,1 +1,1 @@
-web: java $JAVA_OPTS -cp target/classes:target/dependency/* TelegramBotApi
+worker: java $JAVA_OPTS -cp target/classes:target/dependency/* Valerii_Nochnyi.IdeaProjects.TelegramBotApi
