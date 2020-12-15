@@ -1,1 +1,1 @@
-bot: java -jar build/libs/TelegramBotApi-1.0-all.jar
+web: java $JAVA_OPTS -cp target/classes:target/dependency/* com.TelegramBotApi.Bot
