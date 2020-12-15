@@ -1,1 +1,1 @@
-worker: java $JAVA_OPTS -cp target/classes:target/dependency/* TelegramBotApi
+web: java -jar target/java-getting-started-1.0.jar
