@@ -32,6 +32,8 @@ public class Bot extends TelegramLongPollingBot {
         Message message = update.getMessage();
         if (message != null && message.hasText()) {
             switch (message.getText()) {
+                case "/start":
+                    break;
                 case "/info":
                     sendMsg(message, "На данный момент у меня ограниченная возможность поиска погоды по городам!" + "\n" +
                             "Но наши инженеры, вернее один инженер, обещает расширить мои возможности и сделать меня крутым ботом!"+ "\n" +
@@ -56,7 +58,6 @@ public class Bot extends TelegramLongPollingBot {
         SendMessage sendMessage = new SendMessage();
         sendMessage.enableMarkdown(true);
         sendMessage.setChatId(message.getChatId().toString());
-//        sendMessage.setReplyToMessageId(message.getMessageId());
         sendMessage.setText(text);
         sendMessage.enableHtml(true);
         try {
