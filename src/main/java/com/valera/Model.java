@@ -1,3 +1,5 @@
+package com.valera;
+
 public class Model {
 
     private String name;

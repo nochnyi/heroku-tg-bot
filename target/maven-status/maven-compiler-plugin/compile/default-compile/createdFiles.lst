@@ -1,4 +1,4 @@
-Model.class
-Weather.class
-Enums.class
-Bot.class
+com\valera\Enums.class
+com\valera\Model.class
+com\valera\Bot.class
+com\valera\Weather.class
